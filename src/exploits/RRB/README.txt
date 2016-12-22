@@ -1,0 +1,26 @@
+0. Needs Windows XP or higher with .NET Framework 4.0
+1. Unpack the archive
+2. Run RamdiskBuilder.exe
+3. Google restore ramdisk keys for your phone model and firmware version 
+	(e.g. '7D11 restore ramdisk "3GS"' for 3.1.2 3GS): 
+	http://theiphonewiki.com/wiki/index.php?title=Northstar_7D11_(iPhone_3GS)#Restore_Ramdisk_.28018-6051-014.dmg.29
+4. Put the keys in the app
+5. Click 'Select ramdisk' and browse for a restore ramdisk DMG (can be either original or jailbroken IPSW) 
+	e.g. 018-6051-014.dmg
+
+Example of successful output: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Enter IV and Key, then select the restore ramdisk file!
+SHA1 Hash: 2125416633A4FC547FB3F99C00F123D7DDB3E0A0
+Decrypt OK (does not prove the key is correct)
+HFS opened OK (key is good)
+Volume size: 12312576, tar size: 2928640
+HFS Extend OK, extended 3075072 bytes
+Untar OK
+Encrypt OK
+ALL OK; boot with '018-6051-014.dmg.ssh' ramdisk and a jailbroken kernelcache!
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Note: Pre-filled key/iv are for 3.1.2 3GS restore ramdisk (018-6051-014.dmg)
+
+Reminder: You need to use kernelcache file from a pwned .ipsw to load the ramdisk because SSH is unsigned!
